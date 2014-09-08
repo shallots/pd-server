@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPUPGRADE>
+<version>
+3
+</version>
+<name>
+PhoneDoctor-beta-1.2.apk
+</name>
+<description>
+important upgrade,it is strongly recommend to upgrade.
+</description>
+<apkurl>
+http://10.27.0.88:8080/version/upgrade/PhoneDoctor-beta-1.2.apk
+</apkurl>
+<impactfactor>
+0
+</impactfactor>
+</APPUPGRADE>
