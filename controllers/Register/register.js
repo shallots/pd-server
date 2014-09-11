@@ -5,7 +5,7 @@ mongoose.connect('mongodb://localhost/phonedoctor');
 
 
 function register(req,response){
-	//console.log('start register');
+	console.log('start register');
 	handleRegister(req,response);	
 }
 
@@ -20,7 +20,7 @@ function handleResponse(resultcode,response){
 
 function handleRegister(req,response){
 	var resultcode = -1;
-	//console.log("phonenumber:" + req.body.phonenumber + ",password:" + req.body.password);
+	console.log("phonenumber:" + req.body.phonenumber + ",password:" + req.body.password);
 	var query_doc = {phonenumber:req.body.phonenumber};
 	userCheck.count(query_doc, function(err,doc){
 		if(err) {
@@ -40,7 +40,7 @@ function handleRegister(req,response){
 				handleResponse(resultcode,response);	
 			});
 		}else{
-			//console.log("user existed.");
+			console.log("user existed.");
 			handleResponse(1,response);
 			return 1;
 		}

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <APPUPGRADE>
 <version>
-3
+6
 </version>
 <name>
-PhoneDoctor-beta-1.2.apk
+PhoneDoctor-beta-1.3.0.2.apk
 </name>
 <description>
 important upgrade,it is strongly recommend to upgrade.
+The feature of this version:
+1.Try a new method to search the peak the rough,and it seems better than the previous version.
+2.Draw the curve graph with self-adaption for the canvas.
+3.The result of the heart rate is more stable.
+4.Add broadcast for battery detective,synchrodata.
 </description>
 <apkurl>
-http://10.27.0.88:8080/version/upgrade/PhoneDoctor-beta-1.2.apk
+http://10.27.0.88:8080/version/upgrade/PhoneDoctor-beta-1.3.0.2.apk
 </apkurl>
 <impactfactor>
 0

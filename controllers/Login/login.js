@@ -17,10 +17,12 @@ function handleLogin(req,res){
 	loginCheck.count(query_doc,function(err,doc){
 		if(err){
 			res.send({status:"error"});
+			return;
 		}
-		if(doc == 0)
+		if(doc == 0){
 			res.send({status:"fail"});
-
+			return;
+		}
 		// login success, you can return more infomation or that the client will send more request
 		var qdoc = {phonenumber:req.body.phonenumber};	
 		//console.log(qdoc);	
@@ -29,6 +31,7 @@ function handleLogin(req,res){
 			if(err){
 				//console.log('query error');
 				res.send({status:"server error"});
+				return;
 			}
 			//console.log('result:' + doc + ",name:" + doc.username + ",_id:" + doc._id);
 			var docx = {};
@@ -37,7 +40,7 @@ function handleLogin(req,res){
 			docx.phonenumber = doc.phonenumber;
 			docx.gender = doc.gender;
 			docx.birthday = doc.birthday;
-			//console.log(docx);
+			console.log(docx);
 			res.set({
 				'Content-Type':'text/json;charset=utf-8'
 			});
